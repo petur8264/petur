@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umferðinna</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="log_navbar">
+            <img src="myndir/log.svg" width="80">
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Menu</button>
+            <div class="dropdown-content">
+                <a href="index.html" class="link">Heima síða</a>
+                <a href="aboutus.html" class="link">Um okkur</a>
+                <a href="umferd.html" class="link"> Myndir </a>
+                <a href="bokanir.html" class="link">Bókanir</a>                
+            </div>
+        </div>
+
+    </nav>
+
+    
+
+        <section class="slideshow_myndir">
+            <div class="slideshow-container">
+                <div class="slide fade">
+                    <img src="myndir/snowmbil 2.jpg" alt="Slide 1" width=" 60%" height="60%">
+                </div>
+                <div class="slide fade">
+                    <img src="myndir/sprinter.jpg" alt="Slide 2" width=" 60%" height="60%">
+                </div>
+                <div class="slide fade">
+                    <img src="myndir/sprinter2.jpg" alt="Slide 3" width=" 60%" height="60%">
+                </div>
+            </div>
+
+            <div class="container">
+                <img src="myndir/log og nafn.jpg" alt="" class="img2">
+            </div>
+        </section>
+    
+        <script>
+            let slideIndex = 0;
+            showSlides();
+    
+            function showSlides() {
+                let i;
+                const slides = document.getElementsByClassName("slide");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {slideIndex = 1}
+                slides[slideIndex-1].style.display = "block";
+                setTimeout(showSlides, 5000); // Change image every 2 seconds
+            }
+        </script>
+
+        <section class="slideshow_myndir" class="">
+            <div>
+                <img src="myndir/snowmobil 3.jpg" alt="" class="fadein">
+                <h1>sleði</h1>
+            </div>
+            <div>
+                <img src="myndir/snowmbil 2.jpg" alt="" class="fadein">
+                <h1>sleði</h1>
+            </div>
+            <div>
+                <img src="myndir/sprinter.jpg" alt="" class="fadein">
+                <h1>breitur sprinter</h1>
+            </div>
+            <div>
+                <img src="myndir/sprinter2.jpg" alt="" class="fadein">
+                <h1>breitur sprinter</h1>
+            </div>
+        </section>
+    
+
+
+
+
+    <footer>
+
+        <div>
+            <img src="myndir/log og nafn.jpg" height="80%" width="80%">
+        </div>
+        <div>
+            <h2>Amizing Tours</h2>
+            <div>
+                AMAZINGTOURS var stofnað árið 2004 og býður upp á áratuga reynslu og ástríðu fyrir ferðalög á Íslandi. Við erum skráð sem ferðaþjónustuaðili hjá Íslenska Ferðamálastofnuninni.</div>
+        </div>
+        <div>
+            <h2>hægt er að hafa samband við okkur hér</h2>
+            <div> Símmi +354 571 5555</div>
+            <div> Email AmizingTours@123.is</div>
+            
+        </div>
+    
+    </footer>
+</body>
+</html>
